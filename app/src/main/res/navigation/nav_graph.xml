@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.template.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_createEntityFragment"
+            app:destination="@id/createEntityFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_showAirlinesFragment"
+            app:destination="@id/showAirlinesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createEntityFragment"
+        android:name="com.example.template.ui.createentity.CreateEntityFragment"
+        android:label="fragment_create_entity"
+        tools:layout="@layout/fragment_create_entity" />
+    <fragment
+        android:id="@+id/showAirlinesFragment"
+        android:name="com.example.template.ui.showairlines.ShowAirlinesFragment"
+        android:label="fragment_show_airlines"
+        tools:layout="@layout/fragment_show_airlines" >
+        <action
+            android:id="@+id/action_showAirlinesFragment_to_airlineDetailsFragment"
+            app:destination="@id/airlineDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/airlineDetailsFragment"
+        android:name="com.example.template.ui.airlinedetails.AirlineDetailsFragment"
+        android:label="fragment_airline_details"
+        tools:layout="@layout/fragment_airline_details" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>

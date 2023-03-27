@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Template</string>
+    <string name="create_entity">Create entity</string>
+    <string name="show_schedule">Show schedule</string>
+    <string name="create_btn">Create airline</string>
+    <string name="aboba_airlines">ABOBA Airlines</string>
+    <string name="_15_00_pm">15:00 PM</string>
+    <string name="t34">T34</string>
+</resources>
